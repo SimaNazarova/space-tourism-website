@@ -1,9 +1,7 @@
 import React from "react";
-import logo from "../../images/logo.svg";
-import { NavLink } from "react-router-dom";
 
 import styles from "./Home.module.css";
-import exploreImg from "../../images/explore.png";
+import exploreImg from "../../../images/explore.png";
 function Home() {
   return (
     <div className={styles.container}>

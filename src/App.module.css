@@ -1,0 +1,25 @@
+.app {
+  text-align: center;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  color: #ffff;
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: black;
+}
+
+.destination {
+  background-image: url(./images/destination.png);
+}
+
+.crew {
+  background-image: url(./images/crew.png);
+}
+
+.technology {
+  background-image: url(./images/technology.png);
+}
+
+.home {
+  background-image: url(./images/home.png);
+}

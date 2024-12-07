@@ -10,7 +10,7 @@
 .container {
   display: flex;
   background-color: rgba(151, 151, 151, 0.3);
-  backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px); */
 }
 
 .ul {

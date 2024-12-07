@@ -1,38 +1,12 @@
 import React from "react";
-import logo from "../../images/logo.svg";
+import logo from "../../../images/logo.svg";
 import { NavLink } from "react-router-dom";
 
 import styles from "./Header.module.css";
+import { menuLinks } from "../../../data";
 function Header() {
-  const menuLinks = [
-    {
-      id: 0,
-      name: "home",
-      number: "00",
-      link: "/",
-    },
-    {
-      id: 1,
-      name: "destination",
-      number: "01",
-      link: "/destination",
-    },
-    {
-      id: 2,
-      name: "crew",
-      number: "02",
-      link: "/crew",
-    },
-    {
-      id: 3,
-      name: "technology",
-      number: "03",
-      link: "/technology",
-    },
-  ];
   return (
     <header className={styles.header}>
-      {" "}
       <img src={logo} alt="logo" />
       <div className={styles.line}></div>
       <div className={styles.container}>
