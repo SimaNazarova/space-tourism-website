@@ -6,6 +6,8 @@
   color: #ffff;
   font-family: "Barlow Condensed", sans-serif;
   background-color: black;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .destination {
@@ -22,4 +24,7 @@
 
 .home {
   background-image: url(./images/home.png);
+  @media screen and (max-width: 550px) {
+    background-image: url(./images/homeMobile.png);
+  }
 }

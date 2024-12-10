@@ -1,18 +1,15 @@
 import React, { useState } from "react";
-import logo from "../../images/logo.svg";
-import { NavLink } from "react-router-dom";
 
-import styles from "./Destination.module.css";
+import styles from "./Destination.module.scss";
 import Title from "../../shared/title/Title";
 import { pages } from "../../../data";
+
 function Destination() {
   const [chosenTrip, setChosenTrip] = useState("mars");
 
   const data = pages.find((page) => page.destination)?.destination;
 
   const trip = data?.trips.find((trip) => trip.name === chosenTrip);
-
-  console.log(data);
 
   function changeTrip(trip: string) {
     setChosenTrip(trip);
@@ -42,8 +39,8 @@ function Destination() {
         <div className={styles.line}></div>
         <div className={styles.info}>
           <p className={styles.infoTitle}>AVG. DISTANCE</p>
-          <p className={styles.infoTitle}>Est. travel time</p>
           <p className={styles.infoRes}>{trip?.distance}</p>
+          <p className={styles.infoTitle}>Est. travel time</p>
           <p className={styles.infoRes}>{trip?.time}</p>
         </div>
       </div>

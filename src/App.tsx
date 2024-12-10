@@ -5,14 +5,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Crew from "./components/pages/crew/Crew";
 import Home from "./components/pages/home/Home";
 import Destination from "./components/pages/destination/Destination";
-
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
+import MobileMenu from "./components/widgets/mobileMenu/MobileMenu";
 function App() {
   const location = useLocation();
   const [bg, setBg] = useState(location.pathname);
 
   useEffect(() => {
-    console.log(bg);
     switch (location.pathname) {
       case "/destination":
         setBg("destination");
@@ -31,6 +30,7 @@ function App() {
   return (
     <div className={`${styles.app} ${styles[bg]}`}>
       <Header />
+      <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/destination" element={<Destination />}></Route>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Title.module.css";
+import styles from "./Title.module.scss";
 
 interface ITitle {
   title?: { id: string; text: string };

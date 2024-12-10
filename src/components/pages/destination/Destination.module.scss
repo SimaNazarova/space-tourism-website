@@ -1,0 +1,143 @@
+.destination {
+  display: flex;
+  padding-left: 166px;
+  padding-right: 163px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1300px) {
+    padding-left: 60px;
+  }
+  @media screen and (max-width: 1172px) {
+    flex-direction: column;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
+.img {
+  margin-top: 97px;
+  margin-left: 60px;
+
+  @media screen and (max-width: 1172px) {
+    margin: 0;
+    height: 300px;
+    width: 300px;
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 550px) {
+    margin-top: 81px;
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  gap: 36px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 0;
+  @media screen and (max-width: 1172px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+    gap: 26px;
+  }
+}
+
+.li {
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.name {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Bellefair", sans-serif;
+  @media screen and (max-width: 1172px) {
+    margin-top: 32px;
+    font-size: 56px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  height: 150px;
+  margin: 0;
+  margin-top: 14px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  @media screen and (max-width: 1172px) {
+    margin-top: 16px;
+  }
+  @media screen and (max-width: 550px) {
+    margin-top: 15px;
+  }
+}
+
+.line {
+  background-color: #ffff;
+  opacity: 0.5;
+  height: 1px;
+  width: 100%;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 550px) {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+.rightBlock {
+  max-width: 410px;
+  margin-top: 174px;
+  text-align: left;
+  @media screen and (max-width: 1172px) {
+    max-width: 573px;
+    align-self: center;
+    text-align: center;
+    margin-top: 53px;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #ffff;
+}
+
+.infoTitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+.infoRes {
+  font-size: 28px;
+  font-family: "Bellefair", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  @media screen and (max-width: 1172px) {
+    margin-bottom: 62px;
+  }
+
+  @media screen and (max-width: 550px) {
+    margin-bottom: 32px;
+  }
+}
+
+.infoTitle:nth-of-type(3) {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.infoRes:nth-of-type(4) {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}

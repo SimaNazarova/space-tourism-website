@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Home.module.css";
+import styles from "./Home.module.scss";
 import exploreImg from "../../../images/explore.png";
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <img src={exploreImg} alt="explore" />
+        <img className={styles.img} src={exploreImg} alt="explore" />
       </div>
     </div>
   );

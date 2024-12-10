@@ -1,0 +1,36 @@
+.container {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: blur(50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ul {
+  list-style-type: none;
+  gap: 50px;
+  text-transform: uppercase;
+  margin: 118px 167px 0 32px;
+  color: #ffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.li {
+  margin-bottom: 32px;
+}
+.li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 2.7px;
+  height: 45px;
+  display: block;
+}
+
+.number {
+  margin-right: 14px;
+  font-weight: 500;
+}

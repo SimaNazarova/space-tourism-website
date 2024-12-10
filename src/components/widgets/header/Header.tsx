@@ -2,23 +2,27 @@ import React from "react";
 import logo from "../../../images/logo.svg";
 import { NavLink } from "react-router-dom";
 
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import { menuLinks } from "../../../data";
+import BurgerMenu from "../burgerMenu/BurgerMenu";
+
 function Header() {
   return (
     <header className={styles.header}>
-      <img src={logo} alt="logo" />
+      <img className={styles.logo} src={logo} alt="logo" />
       <div className={styles.line}></div>
+      <BurgerMenu />
+
       <div className={styles.container}>
         <ul className={styles.ul}>
           {menuLinks.map((item) => (
-            <li key={item.id}>
+            <li className={styles.li} key={item.id}>
               <NavLink
                 to={item.link}
                 className={({ isActive }) =>
                   isActive ? styles.active : undefined
                 }>
-                <span>{item.number}</span>
+                <span className={styles.number}>{item.number}</span>
                 {item.name}
               </NavLink>
             </li>
