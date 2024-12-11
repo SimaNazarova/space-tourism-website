@@ -5,7 +5,7 @@ import Title from "../../shared/title/Title";
 import { pages } from "../../../data";
 
 function Destination() {
-  const [chosenTrip, setChosenTrip] = useState("mars");
+  const [chosenTrip, setChosenTrip] = useState("moon");
 
   const data = pages.find((page) => page.destination)?.destination;
 

@@ -6,6 +6,7 @@
   right: 0;
   backdrop-filter: blur(50px);
   transition: transform 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .ul {
