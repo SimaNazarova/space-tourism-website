@@ -35,9 +35,6 @@ function Crew() {
           })}
         </ul>
       </div>
-      {/* <div className={styles.rightBlock}>
-        <img className={styles.img} src={member?.img} alt="" />
-      </div> */}
     </div>
   );
 }

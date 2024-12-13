@@ -1,0 +1,237 @@
+.crew {
+  display: flex;
+  padding-left: 166px;
+  padding-right: 163px;
+  justify-content: space-between;
+  margin-top: 76px;
+  position: relative;
+  padding-bottom: 101px;
+  @media screen and (max-width: 1300px) {
+    padding-left: 40px;
+  }
+  @media screen and (max-width: 1172px) {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  @media screen and (max-width: 1172px) {
+    padding-left: 0px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+  }
+}
+
+.title {
+  @media screen and (max-width: 1172px) {
+    padding-left: 38px;
+  }
+}
+
+.leftBlock {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  @media screen and (max-width: 1172px) {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    // padding-left: 38px;
+  }
+}
+
+.cover {
+  height: 37vh;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom 20% right 0%;
+
+  left: 0;
+  display: none;
+
+  @media screen and (max-width: 1172px) {
+    display: block;
+  }
+}
+
+.cover_1 {
+  background-image: url(../../../images/vehicle.jpg);
+}
+.cover_2 {
+  background-image: url(../../../images/spaceport.jpg);
+}
+.cover_3 {
+  background-image: url(../../../images/capsule.jpg);
+}
+
+.info {
+  margin-top: 137px;
+  grid-row: 2/3;
+  grid-column: 2/6;
+  @media screen and (max-width: 1172px) {
+    margin-top: 60px;
+    order: 3;
+  }
+  @media screen and (max-width: 500px) {
+    order: 5;
+    margin-top: 26px;
+    padding: 0 24px;
+  }
+}
+.subname {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  margin-top: 0;
+  // @media screen and (max-width: 1172px) {
+  //   font-size: 24px;
+  // }
+  // @media screen and (max-width: 500px) {
+  //   font-size: 16px;
+  // }
+}
+
+.name {
+  font-family: "Bellefair";
+  font-size: 56px;
+  text-transform: uppercase;
+  margin: 0;
+  @media screen and (max-width: 1172px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 415px;
+  height: 300px;
+  @media screen and (max-width: 1172px) {
+    font-size: 16px;
+    margin: 16px auto 0;
+    height: 100px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  width: 80px;
+  margin-bottom: 94px;
+  gap: 32px;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-top: 137px;
+  @media screen and (max-width: 1172px) {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+    flex-direction: row;
+    order: 2;
+    margin-top: 56px;
+    gap: 16px;
+  }
+}
+
+.bullet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 24px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+
+  @media screen and (max-width: 1172px) {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+.active {
+  background-color: #fff;
+  color: black;
+}
+
+.rightBlock {
+  position: absolute;
+  right: 0;
+  margin-top: 136px;
+  overflow: hidden;
+  height: 507px;
+  width: 495px;
+  background-position: bottom;
+  background-size: cover;
+
+  @media screen and (max-width: 1172px) {
+    height: 527px;
+    width: 515px;
+  }
+
+  @media screen and (max-width: 1172px) {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    left: 0;
+    right: 0;
+    background-position: bottom 20% right 0;
+    order: 2;
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 170px;
+    width: 100%;
+    position: relative;
+    order: 2;
+    margin-top: 32px;
+  }
+}
+
+// .img {
+//   position: absolute;
+
+//   bottom: 0;
+//   @media screen and (max-width: 1172px) {
+//     height: 532px;
+//     width: auto;
+//   }
+//   @media screen and (max-width: 500px) {
+//     height: 223px;
+//   }
+// }
+
+.line {
+  @media screen and (max-width: 500px) {
+    background-color: #979797;
+    opacity: 0.5;
+    height: 1px;
+    width: 100%;
+    order: 3;
+  }
+}

@@ -7,6 +7,7 @@ import Home from "./components/pages/home/Home";
 import Destination from "./components/pages/destination/Destination";
 import styles from "./App.module.scss";
 import MobileMenu from "./components/widgets/mobileMenu/MobileMenu";
+import Technology from "./components/pages/technology/Technology.";
 function App() {
   const location = useLocation();
   const [bg, setBg] = useState(location.pathname);
@@ -35,7 +36,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/destination" element={<Destination />}></Route>
         <Route path="/crew" element={<Crew />}></Route>
-        <Route path="/technology"></Route>
+        <Route path="/technology" element={<Technology />}></Route>
       </Routes>
     </div>
   );

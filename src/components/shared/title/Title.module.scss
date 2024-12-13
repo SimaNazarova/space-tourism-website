@@ -4,7 +4,8 @@
   font-weight: 400;
   letter-spacing: 2px;
   display: flex;
-
+  grid-row: 1/2;
+  grid-column: 1/6;
   @media screen and (max-width: 1100px) {
     font-size: 20px;
     order: 1;
