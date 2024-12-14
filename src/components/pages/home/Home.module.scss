@@ -68,8 +68,30 @@
   }
 }
 
+.imgContainer {
+  position: relative;
+  width: 174px;
+  height: 174px;
+  cursor: pointer;
+}
+.imgOpacity {
+  background-color: #ffff;
+  opacity: 0.5;
+  width: 274px;
+  height: 274px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 50%;
+}
+
 .img {
   margin-top: 156px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 90px;

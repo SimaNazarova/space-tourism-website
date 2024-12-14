@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Header from "./components/widgets/header/Header";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -8,10 +8,12 @@ import Destination from "./components/pages/destination/Destination";
 import styles from "./App.module.scss";
 import MobileMenu from "./components/widgets/mobileMenu/MobileMenu";
 import Technology from "./components/pages/technology/Technology.";
+
+import gsap from "gsap";
 function App() {
   const location = useLocation();
   const [bg, setBg] = useState(location.pathname);
-
+  const bgRef = useRef<any>();
   useEffect(() => {
     switch (location.pathname) {
       case "/destination":
@@ -29,7 +31,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className={`${styles.app} ${styles[bg]}`}>
+    <div className={`${styles.app} ${styles[bg]}`} ref={bgRef}>
       <Header />
       <MobileMenu />
       <Routes>
