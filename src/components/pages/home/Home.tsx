@@ -9,16 +9,14 @@ function Home() {
   function anma(status: string) {
     const tl = gsap.fromTo(
       imgRef.current,
-      { scale: 1, duration: 0.3 },
-      { scale: 1.2, duration: 0.3 }
+      { scale: 1, duration: 0.12 },
+      { scale: 1.2, duration: 0.12 }
     );
     if (status === "show") {
       tl.play();
     } else if (status === "hide") {
       tl.reverse(0);
     }
-
-    console.log("kekek");
   }
   console.log(imgRef.current);
   return (
