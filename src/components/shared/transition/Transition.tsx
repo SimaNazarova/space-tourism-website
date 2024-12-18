@@ -1,17 +1,20 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { ReactNode } from "react";
 
-import styles from "./Transition.module.scss";
 import gsap from "gsap";
 import { SwitchTransition, Transition } from "react-transition-group";
-import { useLocation } from "react-router-dom";
 
-const TransitionComponent = ({ children }: any) => {
+interface Itransition {
+  children: ReactNode;
+}
+
+const TransitionComponent = ({ children }: Itransition) => {
+  console.log(children);
   return (
     <SwitchTransition>
       <Transition
         key={location.pathname}
         timeout={500}
-        onEnter={(node: any) => {
+        onEnter={(node: HTMLElement) => {
           gsap.set(node, { autoAlpha: 0 });
 
           gsap
@@ -20,7 +23,7 @@ const TransitionComponent = ({ children }: any) => {
             .to(node, { duration: 0.5 })
             .play();
         }}
-        onExit={(node: any) => {
+        onExit={(node: HTMLElement) => {
           gsap
             .timeline({ paused: true })
             .to(node, { duration: 0.2 })
