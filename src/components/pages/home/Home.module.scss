@@ -62,6 +62,7 @@
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 16px;
+    font-weight: 300;
   }
   @media screen and (max-width: 550px) {
     font-size: 15px;
@@ -70,9 +71,22 @@
 
 .imgContainer {
   position: relative;
-  width: 174px;
-  height: 174px;
+  width: 274px;
+  height: 274px;
   cursor: pointer;
+  margin-top: 156px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 90px;
+    margin-top: 90px;
+    width: 242px;
+    height: 242px;
+  }
+  @media screen and (max-width: 550px) {
+    margin-bottom: 51px;
+    width: 150px;
+    height: 150px;
+  }
 }
 .imgOpacity {
   background-color: #ffff;
@@ -84,23 +98,28 @@
   left: 0;
   z-index: 0;
   border-radius: 50%;
+  @media screen and (max-width: 768px) {
+    width: 242px;
+    height: 242px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .img {
-  margin-top: 156px;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 99;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 90px;
     width: 242px;
     height: 242px;
   }
 
   @media screen and (max-width: 550px) {
-    margin-top: 81px;
     width: 150px;
     height: 150px;
   }
